@@ -1,12 +1,11 @@
-
+import React, { useRef } from 'react'
 import { Button, FormControl, FormLabel, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, useDisclosure } from '@chakra-ui/react'
-import React from 'react'
 
 export default function InitialFocus() {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
-    const initialRef = React.useRef(null)
-    const finalRef = React.useRef(null)
+    const initialRef = useRef(null)
+    const finalRef = useRef(null)
   
     return (
       <>
